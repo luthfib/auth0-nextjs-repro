@@ -1,6 +1,5 @@
 ## Getting Started
 
-1. `pnpm install`
-2. `pnpm run dev` 
-
-
+1. `nvm install`
+2. `pnpm install`
+3. `pnpm run dev` 
