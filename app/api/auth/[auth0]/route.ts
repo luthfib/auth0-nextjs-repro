@@ -10,10 +10,10 @@ import { NextApiResponse } from "next/types";
 // different from the original Response object) and we'd get a 500 error
 
 // with "No response is returned from route handler" (see: https://github.com/vercel/next.js/blob/6ed4fddf8a55f956ca6a714e081a384880d45e52/packages/next/src/server/future/route-modules/app-route/module.ts#L367)
-let originalResponse = global.Response;
+// let originalResponse = global.Response;
 
 export const GET = (req: NextRequest, res: NextApiResponse) => {
-  global.Response = originalResponse;
+  // global.Response = originalResponse;
 
   return handleAuth({
     logout: handleLogout({ returnTo: "/api/auth/login" }),
